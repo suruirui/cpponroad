@@ -1,15 +1,10 @@
 #include <iostream>
+#include <string>
+#include <vector>
+#include <iterator>
 using namespace std;
 int main(){
-  cout << "hello github" << endl;
-    cout << "hello github" << endl;
-      cout << "hello github" << endl;
-        cout << "hello github" << endl;
-          cout << "hello .......github" << endl;
-		  cout << endl;
-		  cout << endl;
-		  cout << endl;
-		  cout << endl;
-		  cout << endl;
-  return 0;
+	vector<int> iv(10,0);
+	copy(iv.begin(),iv.end(),ostream_iterator(cout," "));
+	return 0;
 }
